@@ -9,7 +9,7 @@ and there is “main” file which run all tests and produces an output.
 <b>Necessary environment</b>: a Linux-based computer (it should be a NFS-server), a Linux-based virtual machine (it should be a NFS-client) installed on it. They should be connected via a network. A Linux-based computer (a NFS-server) should have ssh. A Linux-based virtual machine should have ssh and 2 network adapters (NAT and a Host-only adapter named vboxnet0 (by default)). A programme should be executed on a Linux-based computer (a NFS-server). 
 
 <b>Necessary steps for NFS installation</b>:
-  1. Install NFS on both a server (a Linux-based computer) and a client (a Linux-based virtual machine). On Ubuntu 16.04 (for example) you can do it with a command "sudo apt install nfs-kernel-server nfs-common"
+  1. To install NFS on both a server (a Linux-based computer) and a client (a Linux-based virtual machine) on Ubuntu 16.04 (for example) you can run a command "sudo apt install nfs-kernel-server nfs-common"
   2. Check (on both a server and a client) if a NFS-server is correctly installed. You can do it with a command "rpcinfo -p | grep nfs"
   3. Check (on both a server and a client) if NFS is supported on a kernel level. You can do it with a command "cat /proc/filesystems | grep nfs". If it is not supported on a kernel level, run a command "modprobe nfs" to load a kernel's module manually
 
