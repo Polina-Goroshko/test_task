@@ -5,6 +5,7 @@ and there is “main” file which run all tests and produces an output.
 <b>Test cases</b>: https://kb.epam.com/display/FLKMWD/Test+task+documentation%3A+test+cases
 
 <b>Necessary Python versions</b>: Python 3.5.2, pytest-3.6.4, py-1.5.4, pluggy-0.7.1
+
 <b>Necessary environment</b>: a Linux-based computer (it should be a NFS-server), a Linux-based virtual machine (it should be a NFS-client) installed on it. They should be connected via a network. A Linux-based computer (a NFS-server) should have ssh. A Linux-based virtual machine should have ssh and 2 network adapters (NAT and a Host-only adapter named vboxnet0). A programme should be executed on a Linux-based computer (a NFS-server). 
 
 <b>Necessary steps for NFS installation</b>:
