@@ -16,10 +16,9 @@ and there is “main” file which run all tests and produces an output.
 
 <b>Necessary steps for a programme execution</b>: 
   1. Prepare a Linux-based computer (as a NFS-server) and a Linux-based virtual machine (as a NFS-client) according with a necessary environment described above.  
-  2. On a server (a Linux-based computer) create a directory /home/polina/Music
-  3. On a server (a Linux-based computer) move a directiry named "tests" and a main.py file to /home/polina/Music
-  4. On a server (a Linux-based computer) create a file /home/polina/fileForLogs. It is needed for storing logs
-  5. On a server (a Linux-based computer) in /home/polina/Music run a command "python3 ./main.py"
+  2. Download a /tests directory and a main.py file 
+  3. Paste them in one directory
+  4. In a directory with a */tests directory and a main.py file open a terminal. Run there "python3 ./main.py"
   
  <b>Additional information</b>:
  When a command "python3 ./main.py" will be successfully run on a Linux-based computer (as a NFS-server) it will be asked (for 3 times. Each for an implemented test case. All in all there are 3 implemented test cases) to write some information to a standard input. Client IP means an IP (in my case enp0s8 was used) of a Linux-based virtual machine (a NFS-client). Client port - write down yours (of a Linux-based virtual machine (a NFS-client)) if specified, if not - write down 22 (it is a default). Client user - means a user on a Linux-based virtual machine (a NFS-client), but not root. Client password - means a password of a user on a Linux-based virtual machine (a NFS-client). Server IP - means an IP (vboxnet0) of a Linux-based computer (a NFS-server). There is a timeout (2 minutes) in the code after the main activity of each test fuction. It was made for the ability to check correctness of a test manually. During the timeout we can manually go to our virtual machine (a NFS-client) and check if a file is created or not, for example.
